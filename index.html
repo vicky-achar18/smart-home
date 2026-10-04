@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHome - Automation Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="project.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <span>Smart<span>Home</span></span>
+        </div>
+
+        <nav class="navigation">
+
+            <p class="menu-title">MAIN MENU</p>
+
+            <a href="#" class="nav-link active">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Devices</span>
+                <span class="badge">12</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-door-open"></i>
+                <span>Rooms</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Security</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Energy</span>
+            </a>
+
+            <p class="menu-title">SYSTEM</p>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-clock"></i>
+                <span>Schedules</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-dot"></span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="help-box">
+                <i class="fa-solid fa-circle-question"></i>
+
+                <div>
+                    <h4>Need Help?</h4>
+                    <p>Contact support</p>
+                </div>
+            </div>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div class="mobile-logo">
+                <i class="fa-solid fa-house"></i>
+                SmartHome
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search devices, rooms...">
+            </div>
+
+            <div class="top-actions">
+
+                <div class="header-icon">
+                    <i class="fa-solid fa-bell"></i>
+                    <span></span>
+                </div>
+
+                <div class="profile">
+
+                    <div class="profile-image">
+                        KS
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Kailash Achar</strong>
+                        <small>Home Owner</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+            <!-- Welcome -->
+
+            <div class="welcome">
+
+                <div>
+                    <p class="small-text">Sunday, October 4, 2026</p>
+
+                    <h1>
+                        Good Evening, Kailash 👋
+                    </h1>
+
+                    <p>
+                        Here's what's happening in your smart home today.
+                    </p>
+                </div>
+
+                <button class="add-device">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Device
+                </button>
+
+            </div>
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon temperature">
+                        <i class="fa-solid fa-temperature-half"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <p>Temperature</p>
+                        <h2>24°C</h2>
+                        <span class="positive">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            2° from yesterday
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <p>Humidity</p>
+                        <h2>55%</h2>
+                        <span class="positive">
+                            Comfortable
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon energy">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <p>Energy Usage</p>
+                        <h2>4.2 kWh</h2>
+                        <span class="positive">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            12% this week
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon devices">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+
+                    <div class="stat-info">
+                        <p>Active Devices</p>
+                        <h2>8 / 12</h2>
+                        <span class="online">
+                            <i class="fa-solid fa-circle"></i>
+                            All systems online
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MAIN GRID ================= -->
+
+            <div class="content-grid">
+
+                <!-- DEVICE CONTROL -->
+
+                <section class="devices-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            <h2>Device Control</h2>
+                            <p>Control your connected devices</p>
+                        </div>
+
+                        <a href="#">View all <i class="fa-solid fa-arrow-right"></i></a>
+
+                    </div>
+
+
+                    <div class="device-grid">
+
+
+                        <!-- Light -->
+
+                        <div class="device-card">
+
+                            <div class="device-top">
+
+                                <div class="device-icon light-icon">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                            <h3>Living Room Light</h3>
+                            <p>Living Room</p>
+
+                            <div class="device-status active-status">
+                                <i class="fa-solid fa-circle"></i>
+                                ON
+                            </div>
+
+                        </div>
+
+
+                        <!-- AC -->
+
+                        <div class="device-card">
+
+                            <div class="device-top">
+
+                                <div class="device-icon ac-icon">
+                                    <i class="fa-solid fa-snowflake"></i>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                            <h3>Air Conditioner</h3>
+                            <p>Bedroom</p>
+
+                            <div class="device-status active-status">
+                                <i class="fa-solid fa-circle"></i>
+                                24°C
+                            </div>
+
+                        </div>
+
+
+                        <!-- Fan -->
+
+                        <div class="device-card">
+
+                            <div class="device-top">
+
+                                <div class="device-icon fan-icon">
+                                    <i class="fa-solid fa-fan"></i>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                            <h3>Ceiling Fan</h3>
+                            <p>Living Room</p>
+
+                            <div class="device-status">
+                                <i class="fa-solid fa-circle"></i>
+                                OFF
+                            </div>
+
+                        </div>
+
+
+                        <!-- TV -->
+
+                        <div class="device-card">
+
+                            <div class="device-top">
+
+                                <div class="device-icon tv-icon">
+                                    <i class="fa-solid fa-tv"></i>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                            <h3>Smart TV</h3>
+                            <p>Living Room</p>
+
+                            <div class="device-status active-status">
+                                <i class="fa-solid fa-circle"></i>
+                                ON
+                            </div>
+
+                        </div>
+
+
+                        <!-- Door Lock -->
+
+                        <div class="device-card">
+
+                            <div class="device-top">
+
+                                <div class="device-icon lock-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                            <h3>Smart Door Lock</h3>
+                            <p>Main Entrance</p>
+
+                            <div class="device-status active-status">
+                                <i class="fa-solid fa-circle"></i>
+                                LOCKED
+                            </div>
+
+                        </div>
+
+
+                        <!-- Camera -->
+
+                        <div class="device-card">
+
+                            <div class="device-top">
+
+                                <div class="device-icon camera-icon">
+                                    <i class="fa-solid fa-video"></i>
+                                </div>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                            <h3>Security Camera</h3>
+                            <p>Front Door</p>
+
+                            <div class="device-status active-status">
+                                <i class="fa-solid fa-circle"></i>
+                                ACTIVE
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RIGHT COLUMN -->
+
+                <aside class="right-column">
+
+
+                    <!-- HOME STATUS -->
+
+                    <div class="panel">
+
+                        <div class="panel-heading">
+                            <div>
+                                <h2>Home Status</h2>
+                                <p>Current security status</p>
+                            </div>
+
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+
+                        <div class="security-status">
+
+                            <div class="security-icon">
+                                <i class="fa-solid fa-shield-check"></i>
+                            </div>
+
+                            <div>
+                                <h3>All Secure</h3>
+                                <p>Your home is protected</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="security-list">
+
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-door-closed"></i>
+                                    Doors
+                                </span>
+
+                                <strong>Locked</strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-window-maximize"></i>
+                                    Windows
+                                </span>
+
+                                <strong>Closed</strong>
+                            </div>
+
+                            <div>
+                                <span>
+                                    <i class="fa-solid fa-video"></i>
+                                    Cameras
+                                </span>
+
+                                <strong>3 Active</strong>
+                            </div>
+
+                        </div>
+
+                        <button class="security-button">
+                            View Security
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- QUICK SCENES -->
+
+                    <div class="panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <h2>Quick Scenes</h2>
+                                <p>Automate your home</p>
+                            </div>
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+
+                        <div class="scene-grid">
+
+                            <div class="scene">
+                                <div class="scene-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                                <span>Home</span>
+                            </div>
+
+                            <div class="scene">
+                                <div class="scene-icon">
+                                    <i class="fa-solid fa-moon"></i>
+                                </div>
+                                <span>Good Night</span>
+                            </div>
+
+                            <div class="scene">
+                                <div class="scene-icon">
+                                    <i class="fa-solid fa-film"></i>
+                                </div>
+                                <span>Movie</span>
+                            </div>
+
+                            <div class="scene">
+                                <div class="scene-icon">
+                                    <i class="fa-solid fa-person-walking"></i>
+                                </div>
+                                <span>Leaving</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+
+            <!-- ================= BOTTOM SECTION ================= -->
+
+            <div class="bottom-grid">
+
+
+                <!-- ROOMS -->
+
+                <section class="panel rooms-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h2>Rooms</h2>
+                            <p>Manage devices by room</p>
+                        </div>
+
+                        <a href="#">View all</a>
+
+                    </div>
+
+
+                    <div class="room-list">
+
+
+                        <div class="room">
+
+                            <div class="room-image living">
+                                <i class="fa-solid fa-couch"></i>
+                            </div>
+
+                            <div class="room-info">
+                                <h3>Living Room</h3>
+                                <p>5 Devices</p>
+                            </div>
+
+                            <div class="room-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="room">
+
+                            <div class="room-image bedroom">
+                                <i class="fa-solid fa-bed"></i>
+                            </div>
+
+                            <div class="room-info">
+                                <h3>Bedroom</h3>
+                                <p>3 Devices</p>
+                            </div>
+
+                            <div class="room-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="room">
+
+                            <div class="room-image kitchen">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+
+                            <div class="room-info">
+                                <h3>Kitchen</h3>
+                                <p>2 Devices</p>
+                            </div>
+
+                            <div class="room-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- ENERGY -->
+
+                <section class="panel energy-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <h2>Energy Usage</h2>
+                            <p>Today's consumption</p>
+                        </div>
+
+                        <a href="#">Details</a>
+
+                    </div>
+
+
+                    <div class="energy-value">
+                        <strong>4.2</strong>
+                        <span>kWh</span>
+
+                        <div class="energy-change">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            12% lower
+                        </div>
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="bar" style="height:35%">
+                            <span>Mon</span>
+                        </div>
+
+                        <div class="bar" style="height:55%">
+                            <span>Tue</span>
+                        </div>
+
+                        <div class="bar" style="height:45%">
+                            <span>Wed</span>
+                        </div>
+
+                        <div class="bar" style="height:70%">
+                            <span>Thu</span>
+                        </div>
+
+                        <div class="bar" style="height:50%">
+                            <span>Fri</span>
+                        </div>
+
+                        <div class="bar active-bar" style="height:80%">
+                            <span>Sat</span>
+                        </div>
+
+                        <div class="bar" style="height:40%">
+                            <span>Sun</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <footer>
+
+                <p>
+                    © 2026 SmartHome. Smart living made simple.
+                </p>
+
+                <div>
+                    <a href="#">Privacy</a>
+                    <a href="#">Help</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
